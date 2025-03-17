@@ -22,7 +22,6 @@ let profesor = true
 /* deprecado */
 var edad2 = 11 // no lo usamos
 
-
 /*constante*/
 
 const apodo = "Steve"
@@ -32,8 +31,9 @@ apodo = "otra cosa"
 
 let numero = [1,2,3,4]
 const LETRAS = ["a","b","c"]
-const VARIADITO = [1,"asd",True]
+const VARIADITO = [1,"asd",true]
 const ARRAYMULTIPLE = [[1,2,3],[4,5,6,]]
+
 
 /* objeto literal (diccionario) */
 //camelCase , snake_case , kebab-case , l33t , PascalCase
@@ -50,6 +50,8 @@ let mejorProfesor =
 
 }
 
+
+
 /* array de objetos literales */
 
 let ayudante1 = {nombre:"Dani",apellido:"Maradei"}
@@ -57,7 +59,6 @@ let ayudante2 = {nombre:"Franco",apellido:"Vietyes"}
 let ayudante3 = {nombre:"Sofia",apellido:"Ronconco"}
 
 const ALUMNOS = [ayudante1,ayudante2,ayudante3]
-
 
 /************************************/
 
@@ -91,9 +92,6 @@ console.log(1||2)
 // !=
 // !===
 /* los debiles comparan solo el contenido, los estrictos tambien el tipo de dato*/
-
-
-
 
 // parseo de datos
 
