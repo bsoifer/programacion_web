@@ -95,5 +95,5 @@ console.log(1||2)
 
 // parseo de datos
 
-
+let prueba = 2
 
