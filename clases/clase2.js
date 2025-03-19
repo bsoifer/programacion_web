@@ -96,4 +96,3 @@ console.log(1||2)
 // parseo de datos
 
 
-
