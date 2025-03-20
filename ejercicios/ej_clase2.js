@@ -77,3 +77,17 @@ for(i = 0; i < myObj.cars.length; i++){
     }
 }
 */
+
+/*
+5. Ejercicio 5: Array de Objetos
+Crea un array de 3 objetos que representen películas, cada una con título, director y año de
+lanzamiento. Imprime el director de la última película.
+*/
+
+const peliculas = [
+  {titulo: "Toy  Story", director: "John Lasseter", lanzamiento: 1999},
+  {titulo: "Los Increibles", director: "Brad Bird", lanzamiento: 2004},
+  {titulo: "Ratatouille", director: "Brad Bird", lanzamiento: 2007}
+]
+
+console.log(peliculas[peliculas.length-1].director)
