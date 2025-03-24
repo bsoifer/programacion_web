@@ -14,12 +14,13 @@ let restar = function(a,b){
     return a-b
 }
 
+console.log(restar(1,2))
 //pocas funciones --> conviene expresada. Recomendada
 //muchas funciones --> conviene declarada
 
 
 //3. Funciones flecha
-let masCien = (a) => a + 100
+let masCien = (a) => (a + 100)
 
 
 // Estructura condicional
@@ -37,7 +38,7 @@ function dejarPasar(edad, acompaniado){
 }
 
 // Operador Ternario
-"La cuotaes de: " + (isMember ? "$2:00" : "$10.00")
+"La cuota es de: " + (isMember ? "$2,000" : "$10.00")
 
 
 let edad = 19
@@ -69,15 +70,17 @@ for(let i = 0; i < NUMEROS.length; i++){
 
 // Buscador en el array
 function encontrarValor(array, valor){
+    let valorEncontrado = false
     for(let i = 0; i < array.length; i++){
         if(array[i] == valor){
-            return i
-        }else{
-            return "El va"
+            valorEncontrado = true
         }
     }
+    return valorEncontrado
 }
 
+let encontroValor = encontrarValor(NUMEROS, 3)
+console.log(encontroValor)
 
 // Revisar métodos de arrays
 
@@ -107,6 +110,3 @@ console.log(resultado_2)
 const prompt = require('prompt-sync')()
 const name = prompt("What is your name?") // input
 console.log(`Hey there ${name}`)
-
-
-

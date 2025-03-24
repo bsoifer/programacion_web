@@ -1,3 +1,6 @@
+// Páginas de ejercicios a leer: 8, 9, 13, 14
+
+
 /* 1. Ejercicio 1: Declaración de Variables
 Declara tres variables: una para almacenar tu ciudad, otra para almacenar tu país, y otra 
 para almacenar tu edad de nacimiento. Imprime los valores en la consola 
@@ -226,5 +229,3 @@ let numeroString = "100"
 numeroString = Number(numeroString)
 
 numeroString + 5
-
-// Páginas de ejercicios a leer: 8, 9, 13, 14
