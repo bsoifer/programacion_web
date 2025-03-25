@@ -1,5 +1,5 @@
 // Revisar metodos de arrays
-// Páginas de ejercicios a leer: 1, 3, 4, 5, 8
+// Páginas de ejercicios a leer: 1, 3, 4, 5, 8, 10
 
 /*1. Ejercicio 1: Función Declarada
 Escribe una función que tome tres números como argumentos y retorne el mayor de ellos.
@@ -186,8 +186,103 @@ ejercicio8(name)
 
 /*
 9. Ejercicio 9: Función que Verifica Números Pares
-
 Escribe una función que tome un número y retorne true si es par o false si es impar.
 Utiliza el operador módulo (%) y un operador ternario.
-
 */
+
+function ejercicio9(x){
+    return x%2 === 0 ? true:false
+}
+
+ejercicio9(9)
+
+/*
+10. Ejercicio 10: Uso de switch
+Escribe una función que reciba un día de la semana (en número) y retorne el nombre del
+día. Usa una estructura switch.
+*/
+
+function ejercicio10(x){
+    switch(x){
+        case 1:
+            return "lunes"
+            break
+        case 2:
+            return "martes"
+            break
+        case 3:
+            return "miércoles"
+            break   
+        case 4:
+            return "jueves"
+            break
+        case 5:
+            return "viernes"
+            break
+        case 6:
+            return "sábado"
+            break
+        case 7:
+            return "domingo"
+            break
+        default:
+            return "ERROR"
+            break
+    }
+}
+
+ejercicio10(4)
+
+/*
+11. Ejercicio 11: Función Recursiva
+Crea una función recursiva que calcule la suma de los números de 1 hasta n.
+*/
+
+function ejercicio11(n){
+    let resultado = 1
+    if(n < 1){
+        return "ERROR"
+    }else{
+        for(let i = 2; i <= n; i++){
+            resultado += i
+        }
+        return resultado
+    }
+}
+
+ejercicio11(5)
+
+/*
+12. Ejercicio 12: Validación con Operadores Lógicos
+Escribe una función que verifique si una contraseña cumple con ciertos criterios: al menos 8
+caracteres, contiene un número y una letra mayúscula. Utiliza operadores lógicos para
+combinar las condiciones.
+*/
+
+function ejercicio12(password){
+    let condicion1 = false
+    let condicion2 = false
+    let condicion3 = false
+    if(password.length >= 8){
+        condicion1 = true
+    }
+
+    for(let i = 0; i<password.length; i++){
+        if(isNaN(password[i]) === false ){
+            condicion2 = true
+        }
+        
+        if(password[i] >= "A" && password[i] <= "Z"){
+            condicion3 = true
+        }
+    }
+
+    if(condicion1 && condicion2 && condicion3){
+        return true
+    }else{
+        return false
+    }
+}
+
+let password = "sdveqrgqevasDvc5sd"
+let resultado = ejercicio12(password)
