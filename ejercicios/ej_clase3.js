@@ -1,5 +1,5 @@
 // Revisar metodos de arrays
-// Páginas de ejercicios a leer: 1, 3
+// Páginas de ejercicios a leer: 1, 3, 4, 5, 8
 
 /*1. Ejercicio 1: Función Declarada
 Escribe una función que tome tres números como argumentos y retorne el mayor de ellos.
@@ -77,3 +77,117 @@ let arrayConcatenadoFlecha = (array) => {
 }
 
 arrayConcatenadoFlecha(ejemplo)
+
+/*
+4. Ejercicio 4: Estructura If-Else
+Escribe una función que tome una temperatura en grados Celsius como argumento y
+devuelva un mensaje que indique si hace frío (menor a 15 grados), templado (entre 15 y 25
+grados) o calor (mayor a 25 grados).
+*/
+
+function ejercicio4 (grados){
+    if(grados !== null){
+        if(grados < 15){
+            return "Hace frío"
+        }else if(grados < 25){
+            return "Está templado"
+        }else if(grados >25){
+            return "Hace calor"
+        }else{
+            return "ERROR"
+        }
+    }else{
+        return "ERROR"
+    }
+}
+
+ejercicio4(10)
+ejercicio4(20)
+ejercicio4(30)
+ejercicio4("hola")
+
+/*
+5. Ejercicio 5: Operador Ternario
+Reescribe una función que tome una hora (formato 24 horas) y devuelva "Buenos días" si
+es antes de las 12, "Buenas tardes" si es entre las 12 y 18, o "Buenas noches" si es
+después de las 18, utilizando operadores ternarios.
+*/
+
+function ejercicio5(hora){
+    return (hora < 12 ? "Buenos días": (hora <= 18 ? "Buenas tardes": "Buenas noches"))
+}
+
+ejercicio5(22)
+
+
+/*
+6. Ejercicio 6: Operadores And y Or
+Escribe una función que reciba cuatro argumentos booleanos y retorne true si al menos
+uno de los dos primeros es verdadero y al menos uno de los dos últimos es falso.
+*/
+
+function ejercicio6(bool1, bool2, bool3, bool4){
+    let respuesta = false
+
+    if(bool1 === true || bool2 === true){
+        if(bool3 === false || bool4 === false){
+            respuesta = true
+        }
+    }
+
+    return respuesta
+}
+
+ejercicio6(true, false, true, false)
+
+/*
+7. Ejercicio 7: Función que Calcula el Factorial
+Escribe una función que tome un número como argumento y retorne su factorial. Utiliza una
+estructura if para manejar el caso base.
+*/
+
+function ejercicio7(x){
+    let resultado = x
+    if(x >= 0){
+        if(x === 0){
+            resultado = 1
+        } else{
+            for(let i = x-1; i >= 1; i--){
+                resultado *= i
+            }
+        }
+    return(resultado)
+    }else{
+        return "ERROR"
+    }
+}
+
+ejercicio7(0)
+ejercicio7(-1)
+
+/*
+8. Ejercicio 8: Función con Parámetros por Defecto
+Crea una función que salude a una persona. Si no se proporciona el nombre, debe saludar
+con "Hola, invitado".
+*/
+
+function ejercicio8(nombre){
+    if(nombre === null || nombre === NaN || nombre === undefined || nombre === ''){
+        return "Hola, invitado"
+    }else{
+        return `Hola, ${nombre}!`
+    }
+}
+
+const prompt = require('prompt-sync')()
+const name = prompt("¿Cómo es tu nombre?")
+ejercicio8(name)
+
+
+/*
+9. Ejercicio 9: Función que Verifica Números Pares
+
+Escribe una función que tome un número y retorne true si es par o false si es impar.
+Utiliza el operador módulo (%) y un operador ternario.
+
+*/
