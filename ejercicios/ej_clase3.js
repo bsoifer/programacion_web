@@ -238,15 +238,12 @@ ejercicio10(4)
 Crea una función recursiva que calcule la suma de los números de 1 hasta n.
 */
 
+
 function ejercicio11(n){
-    let resultado = 1
-    if(n < 1){
-        return "ERROR"
+    if(n === 1){
+        return 1
     }else{
-        for(let i = 2; i <= n; i++){
-            resultado += i
-        }
-        return resultado
+        return n + ejercicio11(n-1)
     }
 }
 
