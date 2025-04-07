@@ -10,12 +10,118 @@
     <meta charset="UTF-8"> <!-- el meta no se cierra -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mejor web del mundo</title> <!-- lo que se ve en la pestaña -->
+    <style>*{border:1px solid rgb(189, 32, 32);}</style>
 </head>
+<!--  Para que todos los li se vean de forma horizontal:
+<style>
+    li{display:inline}
+</style>
+-->
 <body> <!-- todo lo que esté acá es para que lo vea el usuario -->
     <header>
+        <nav>
+            <a href="https://campus.itba.edu.ar/" target="_blank">Página del campus</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#final">Final</a>
+        </nav>
+
+        <ul>
+            <li><img src="http://placehold.co/100" alt="Logo"></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Servicios</a></li>
+          </ul>
 
     </header>
 
+    <ol type="A" start="1"> <!-- lista ordenada Con criterio -->
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ol>
+
+
+    <ul type="circle"><!-- lista desordenada Sin criterio-->
+
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li> 
+        <li>Elemento</li>
+        </ul>   
+
+        <table>
+            <tr>
+                <th>Encabezado 1</th> 
+                <th>Encabezado 2</th>
+            </tr>
+            <tr>
+                <td>Data uno</td>
+                <td>Data dos</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+            <tr>
+                <td>Data 6</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Data 7</td>
+            </tr>
+        </table>
+
+        <form action="" method="post">
+            <input type="button" value="Hazme clic">
+            <label for="nombre">Nombre:</label><input type="text" name="" id="nombre" placeholder="Nombre"> 
+            <input type="date" name="" id="">
+            <input type="color" name="" id="">
+            <input type="checkbox" name="Femenino" id="generoFemenino"><label for="generoFemenino">Femenino</label>
+            <br>
+            <input type="email" name="" id="">
+            <input type="password" placeholder="Ingrese su contraseña">
+            <input type="radio" name="" id="">
+            <textarea name="" id= ""></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+          <option value="ar">Argentina</option>
+          <option value="br">Brasil</option>
+          <option value="uy">Uruguay</option>
+        </select>
+        
+        <details>
+            <summary>ALERTA SPOILER NO ABRIR</summary>
+            En LOST estaban todos en un sueño
+        </details>
+
+    <article>
+        <h1>Cómo hacer una página web</h1>
+        <p>HTML es el lenguaje básico para crear contenido en la web...</p>
+      </article>
+
+      <section>
+        <h2>Noticia principal</h2>
+        <p>Hoy pasó algo increíble...</p>
+      </section>
+    
+      <aside>
+        <h3>Otras noticias</h3>
+        <ul>
+          <li><a href="#">Clima de hoy</a></li>
+          <li><a href="#">Resultados de fútbol</a></li>
+        </ul>
+      </aside>
+
+      <img src="https://placehold.co/400x400/F00/00F" alt="">
+            
     <h1>Título</h1>
     <p>Este es un texto con <span style="color: red;">tres palabra rojas</span>.</p>
     <img src="./logo_itba.png" alt="foto de steve">
@@ -30,7 +136,18 @@
         <span>seccion 3</span>
         <span>seccion 4</span>
     </main>
-    <footer></footer>   <!-- cualquier palabra puede ser una etiqueta -->
+    <footer>
+        <div id = "final">
+            <p>
+                <h1>Final de la pagina</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur debitis voluptates natus laborum? Dicta itaque rerum cumque illo aperiam ipsa eaque quae error est. Non cupiditate tempore quibusdam ea at.
+                Doloremque sed nostrum perspiciatis nisi, laudantium, voluptates iure pariatur quo unde sapiente architecto quas tenetur optio deleniti animi ea ipsa? Iusto, vitae odio minus esse dolor soluta aspernatur omnis excepturi?
+                Voluptates dolorem ea nam? Quam sapiente in perferendis aliquam aperiam iste, dolorum, eaque error, sequi animi doloribus harum a tempore laudantium. Ab libero sequi beatae sunt, voluptates laudantium fugiat impedit.
+                Distinctio eligendi perferendis suscipit fugit, tempore rerum, non asperiores illo sed est sint consectetur corporis nostrum unde officiis in soluta recusandae officia reprehenderit. Commodi perspiciatis cumque, placeat voluptate quos porro!</p>
+            </p>
+            <marquee behavior="" direction="">  Esto es una marquee , por suerte está deprecrada</marquee>
+        </div>
+    </footer>   <!-- cualquier palabra puede ser una etiqueta -->
 </body>
 
 <script>
@@ -39,8 +156,16 @@
     let variable = prompt("Ingrese su nombre") 
     alert("Hola " + variable)
     */
+   /* console.log("Hola mundo!") esto se ve en la consola, no en el navegador */
 </script>
-
 </html>
 
 <!-- placehold.co -->
+
+
+
+<!-- HTML parte 2 / manejo de DOM / <ul>, <ol>, <li>, <a>, <table>, <tr>, <td>, 
+    <th>, <form>, <input>, <label>, <textarea>, <button>, <select>, 
+        <option>, getElementById, getElementsByClassName, querySelector, 
+            querySelectorAll, createElement, appendChild, removeChild, setAttribute, 
+            removeAttribute, addEventListener -->
