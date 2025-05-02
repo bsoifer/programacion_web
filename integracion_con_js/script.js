@@ -13,11 +13,11 @@ botonSaludo.addEventListener("click", function (){
     personalizacion.innerHTML = `<marquee> TE odio ${nombre} </marquee>`
 })
 
-/*
-document.getElementById("nombre").addEventListener("mouseover", function(){
-    alert("me hiciste click")
-})
-*/
+
+/* document.getElementById("nombre").addEventListener("mouseover", function(){
+    alert("pasaste por arriba")
+}) */
+
 
 /*
  * class .nombreDeLaClase
@@ -28,8 +28,9 @@ let lista = document.getElementsByClassName("elemLista")
 console.log(lista[0])
 
 
-document.querySelector("#saludar")
-document.querySelector(".elemLista")
+console.log(document.querySelector("#saludar").value)
+console.log(document.querySelector(".elemLista"))
+console.log(document.querySelectorAll(".elemLista")[1])
 
 
 /***************************** */
@@ -37,6 +38,6 @@ let carrito = [];
 
 let producto5= document.getElementById("producto5")
 producto5.addEventListener("click", function (){
-    carrito.push("producto5")
+    carrito.push("producto")
     console.log(carrito)
 })
