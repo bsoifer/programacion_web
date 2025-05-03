@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*
+        acá se escribe el css
+        */
+    </style>
 </head>
 <body>
     <input type="text" id = "nombre">
-    <input type="button" value="Guardar nombre" id = "guardarNombre">
+    <input type="button" value="Guardar nombre" id = "guardarNombre" style="color: red"> <!-- mala práctica usar css acá -->
+
+<!--  Para enviar un mail. Lo que hace esto es enviar algo
+  (en este caso, un mail) al mail que se pone en el action 
+  Es una especie de librerá -->
+  <form action="https://formsubmit.co/bsoifer@itba.edu.ar" method="POST">
+    <input type="email" name="email">
+    <input type="submit" id="enviar">
+</form>
+
+<!-- JSON: Javascript Object Notation
+ Las bases de datos nos leen los datos como los escribe JavaScript
+  -->
+
+  <p id = "parrafoImportante">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur delectus maxime unde illum similique eligendi quam quod iste vero voluptatibus ab, saepe quis accusamus, quos et, voluptatum culpa ipsam beatae.</p>
+
+<ul>
+    <li class="elementoLista">ASD</li>
+    <li class="elementoLista">ASD</li>
+    <li class="elementoLista">ASD</li>
+    <li class="elementoLista">ASD</li>
+    <li class="elementoLista">ASD</li>
+</ul>
+
 </body>
 <script src = almacenamiento.js>
 
@@ -18,18 +47,5 @@
         2) de terceros
         3) propias
 -->
-        
-<!--  Para enviar un mail. Lo que hace esto es enviar algo
-  (en este caso, un mail) al mail que se pone en el action 
-  Es una especie de librerá -->
-<form action="https://formsubmit.co/bsoifer@itba.edu.ar" method="POST">
-    <input type="email" name="email">
-    <input type="submit" id="enviar">
-</form>
-
-<!-- JSON: Javascript Object Notation
- Las bases de datos nos leen los datos como los escribe JavaScript
-  -->
-
 
 </html>

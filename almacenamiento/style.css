@@ -1,0 +1,27 @@
+/* Cascade StyleSheet - Hoja de estilo en cascada */
+
+/* Permite darle estilo a una web */
+
+/* Existen tres formas de linkear un css a un html
+1- Externa: poner en el head del html --> <link rel="stylesheet" href="style.css">
+2- Interna: usar la etiqueta <style> en el head y ahí escribir CSS
+3- Inline: adentro de la etiqueta de html, usar CSS agregando "style" --> NO SE USA. Mala práctica */
+
+/* # para ID */
+#parrafoImportante {
+    color: blue
+}
+
+/* . para class */
+.elementoLista {
+    color: green
+}
+
+/* Como css se lee en cascada, parrafo importante queda en rojo */
+#parrafoImportante {
+    color: red
+}
+
+/* flexbox froggy: juego para entender flexbox y grid 
+grid garden: para entender grid
+grid layout: permitete hace la estructura de la página. Te hace el html y css según lo que querés hacer*/
