@@ -1,0 +1,16 @@
+/* Colores */
+body{background-color: coral;}
+
+h1{
+    border: 1px solid white;
+    color: #0000ff;
+    margin:0 10px 20px 30px;
+    padding: 40 px;
+    display: inline;
+}
+
+h2{
+    color: rgb(0, 255, 0)
+}
+
+
